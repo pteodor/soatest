@@ -12,3 +12,8 @@ steps:
 - script: soatestcli -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2023.1\soatestcli.properties" -data %cd%
   displayName: 'soatest'
 
+- task: PublishParasoftTestResults@1
+  inputs:
+    testRunner: 'XTest10x'
+    testResultsFiles: '**/rep*.xml'
+
