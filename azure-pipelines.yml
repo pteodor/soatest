@@ -9,7 +9,7 @@ trigger:
 pool: Default
 
 steps:
-- script: ls
+- script: ls TestAssets
 - script: pwd
 - script: soatestcli -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2023.1\soatestcli.properties" -data "C:\ProgramData\Jenkins\.jenkins\workspace\Parabank API tests"
   displayName: 'soatest'
