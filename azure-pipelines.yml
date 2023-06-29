@@ -17,4 +17,4 @@ steps:
   inputs:
     testRunner: 'XTest10x'
     testResultsFiles: 
-        **/report.xml
+        '**/report.xml'
