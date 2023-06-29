@@ -17,4 +17,4 @@ steps:
     testRunner: 'XTest10x'
     testResultsFiles: |
         **/report.xml
-        **/!(*-junit).xml
+        !**/*-junit.xml
