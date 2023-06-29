@@ -10,7 +10,7 @@ pool: Default
 
 steps:
 - script: soatestcli -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2023.1\soatestcli.properties" -data %cd%
-  script: rm report.xml-junit.xml
+- script: rm report.xml-junit.xml
   displayName: 'soatest'
 
 - task: PublishParasoftTestResults@1
