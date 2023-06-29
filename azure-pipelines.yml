@@ -15,5 +15,6 @@ steps:
 - task: PublishParasoftTestResults@1
   inputs:
     testRunner: 'XTest10x'
-    testResultsFiles:
-        '**/report.xml'
+    testResultsFiles:        
+    **/report.xml
+    **/!(*-junit).xml
