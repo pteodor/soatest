@@ -9,7 +9,7 @@ trigger:
 pool: Default
 
 steps:
-- script: soatestcli -config "user://Example Configuration" -settings "
+- script: soatestcli -config "user://Example Configuration"
 - task: PublishParasoftResults@1
   inputs:
     resultsFiles: |
