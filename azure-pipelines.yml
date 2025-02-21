@@ -9,12 +9,12 @@ trigger:
 pool: Default
 
 steps:
-- script: soatestcli -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2\soatestcli.properties"
+- script: '"C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2" -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2\soatestcli.properties"'
 - task: PublishParasoftResults@1
   inputs:
     resultsFiles: |
       **/rep*.xml
       **/rep*.sarif
       **/coverage.xml
-    parasoftToolOrJavaRootPath: '"C:\Program Files\Parasoft\SOAtest & Virtualize\2023.1\soatestcli.properties" -data "%cd%"'
+    parasoftToolOrJavaRootPath: '"C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2\soatestcli.properties" -data "%cd%"'
   displayName: 'soatest'
