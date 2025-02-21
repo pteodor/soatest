@@ -9,7 +9,7 @@ trigger:
 pool: Default
 
 steps:
-- script: '"C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2" -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2\soatestcli.properties"'
+- script: '"C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2\soatestcli.exe" -config "user://Example Configuration" -settings "C:\Program Files\Parasoft\SOAtest & Virtualize\2024.2\soatestcli.properties"'
 - task: PublishParasoftResults@1
   inputs:
     resultsFiles: |
